@@ -1,0 +1,15 @@
+
+platform :ios, ‘8.0’
+
+target 'SoundCloudNew' do
+  pod 'Google-Mobile-Ads-SDK'
+pod 'AFNetworking'
+pod 'DZNEmptyDataSet'
+pod 'MagicalRecord'
+pod 'SVPullToRefresh'
+pod 'SDWebImage'
+pod 'Masonry'
+pod 'MGSwipeTableCell'
+pod 'Reachability'
+pod 'MarqueeLabel'
+end

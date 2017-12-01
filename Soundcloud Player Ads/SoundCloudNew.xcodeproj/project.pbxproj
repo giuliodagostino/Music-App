@@ -1,0 +1,831 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		53966B291F06F4E7008497C5 /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53966B271F06F4E7008497C5 /* Crashlytics.framework */; };
+		53966B2A1F06F4E7008497C5 /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53966B281F06F4E7008497C5 /* Fabric.framework */; };
+		89247EBB1C5BE32000C42288 /* PlaylistDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 89247EBA1C5BE32000C42288 /* PlaylistDetailViewController.m */; };
+		89247EC21C5C046600C42288 /* MoreCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 89247EC01C5C046600C42288 /* MoreCell.m */; };
+		89247EC31C5C046600C42288 /* MoreCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 89247EC11C5C046600C42288 /* MoreCell.xib */; };
+		89247EC71C5C229500C42288 /* AddToPlaylistViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 89247EC61C5C229500C42288 /* AddToPlaylistViewController.m */; };
+		89247ED31C5C4BB200C42288 /* NowPlayingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 89247ED21C5C4BB200C42288 /* NowPlayingViewController.m */; };
+		89247ED51C5C4CBB00C42288 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89247ED41C5C4CBB00C42288 /* AVFoundation.framework */; };
+		893542731C54CA1D0036E3FE /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 893542721C54CA1D0036E3FE /* QuartzCore.framework */; };
+		893542751C54CA260036E3FE /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 893542741C54CA260036E3FE /* CoreData.framework */; };
+		893695EE1C5BD3B7005FD4D0 /* Playlist+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 893695EB1C5BD3B7005FD4D0 /* Playlist+CoreDataProperties.m */; };
+		89540EE71C54C69A008790E5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 89540EE61C54C69A008790E5 /* main.m */; };
+		89540EEA1C54C69A008790E5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 89540EE91C54C69A008790E5 /* AppDelegate.m */; };
+		89540EF01C54C69A008790E5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 89540EEE1C54C69A008790E5 /* Main.storyboard */; };
+		89540EF51C54C69A008790E5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 89540EF31C54C69A008790E5 /* LaunchScreen.storyboard */; };
+		895ECD6E1CA06463007DD95D /* UIImage+Custom.m in Sources */ = {isa = PBXBuildFile; fileRef = 895ECD6D1CA06463007DD95D /* UIImage+Custom.m */; };
+		89750AAB1C5D264A007F9E76 /* TrackListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 89750AAA1C5D264A007F9E76 /* TrackListViewController.m */; };
+		897BE8141C54D77A0024403D /* GenresViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 897BE8131C54D77A0024403D /* GenresViewController.m */; };
+		897BE81A1C54D79A0024403D /* HistoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 897BE8191C54D79A0024403D /* HistoryViewController.m */; };
+		897BE81D1C54D7A50024403D /* PlaylistViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 897BE81C1C54D7A50024403D /* PlaylistViewController.m */; };
+		897BE8201C54D7B20024403D /* MoreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 897BE81F1C54D7B20024403D /* MoreViewController.m */; };
+		897BE8231C54DE5B0024403D /* SoundCloudAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = 897BE8221C54DE5B0024403D /* SoundCloudAPI.m */; };
+		897BE8261C560A970024403D /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 897BE8251C560A970024403D /* MainViewController.m */; };
+		897BE8291C560F1F0024403D /* SearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 897BE8281C560F1F0024403D /* SearchViewController.m */; };
+		897BE8321C5617930024403D /* SearchTrackCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 897BE8301C5617930024403D /* SearchTrackCell.m */; };
+		897BE8331C5617930024403D /* SearchTrackCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 897BE8311C5617930024403D /* SearchTrackCell.xib */; };
+		897BE83A1C56292B0024403D /* SuggestCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 897BE8381C56292B0024403D /* SuggestCell.m */; };
+		897BE83B1C56292B0024403D /* SuggestCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 897BE8391C56292B0024403D /* SuggestCell.xib */; };
+		897BE8411C562B9F0024403D /* Suggestion.m in Sources */ = {isa = PBXBuildFile; fileRef = 897BE8401C562B9F0024403D /* Suggestion.m */; };
+		8980092C1C571E74009C6973 /* TrackCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8980092A1C571E74009C6973 /* TrackCell.m */; };
+		8980092D1C571E74009C6973 /* TrackCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8980092B1C571E74009C6973 /* TrackCell.xib */; };
+		898009301C57892F009C6973 /* SCDatabase.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8980092E1C57892F009C6973 /* SCDatabase.xcdatamodeld */; };
+		8980095C1C57983A009C6973 /* Playlist.m in Sources */ = {isa = PBXBuildFile; fileRef = 898009501C57983A009C6973 /* Playlist.m */; };
+		8980095E1C57983A009C6973 /* PlaylistTrack.m in Sources */ = {isa = PBXBuildFile; fileRef = 898009541C57983A009C6973 /* PlaylistTrack.m */; };
+		898009AE1C57D89D009C6973 /* Genre.m in Sources */ = {isa = PBXBuildFile; fileRef = 898009AD1C57D89D009C6973 /* Genre.m */; };
+		898009BE1C57E1D2009C6973 /* GenreCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 898009BC1C57E1D2009C6973 /* GenreCell.m */; };
+		898009BF1C57E1D2009C6973 /* GenreCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 898009BD1C57E1D2009C6973 /* GenreCell.xib */; };
+		898009C21C580138009C6973 /* GenreDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 898009C11C580138009C6973 /* GenreDetailViewController.m */; };
+		898B1E921C56559200C7E892 /* NSNumber+SoundCloud.m in Sources */ = {isa = PBXBuildFile; fileRef = 898B1E911C56559200C7E892 /* NSNumber+SoundCloud.m */; };
+		898BFABC1C59C928003CAB91 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 898BFABB1C59C928003CAB91 /* Assets.xcassets */; };
+		898BFAC01C5A4E98003CAB91 /* PlaylistCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 898BFABE1C5A4E98003CAB91 /* PlaylistCell.m */; };
+		898BFAC11C5A4E98003CAB91 /* PlaylistCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 898BFABF1C5A4E98003CAB91 /* PlaylistCell.xib */; };
+		89A6C86A1C592D7600577EA4 /* Genre+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 89A6C85D1C592D7600577EA4 /* Genre+CoreDataProperties.m */; };
+		89A6C86C1C592D7600577EA4 /* DBTrack+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 89A6C8611C592D7600577EA4 /* DBTrack+CoreDataProperties.m */; };
+		89A6C8741C592E5400577EA4 /* DBTrack.m in Sources */ = {isa = PBXBuildFile; fileRef = 89A6C8711C592E5400577EA4 /* DBTrack.m */; };
+		89A6C8751C592E5400577EA4 /* Track.m in Sources */ = {isa = PBXBuildFile; fileRef = 89A6C8731C592E5400577EA4 /* Track.m */; };
+		89A6C8801C5962D000577EA4 /* PlaylistTrack+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 89A6C87D1C5962D000577EA4 /* PlaylistTrack+CoreDataProperties.m */; };
+		A4C960D61F44B3080042DD93 /* MenuVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A4C960D41F44B3080042DD93 /* MenuVC.m */; };
+		A4C960D71F44B3080042DD93 /* MenuVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = A4C960D51F44B3080042DD93 /* MenuVC.xib */; };
+		A4C960D91F44BD9B0042DD93 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4C960D81F44BD9B0042DD93 /* MessageUI.framework */; };
+		B062191498F64199AC0E94D6 /* libPods-SoundCloudNew.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 93038CB3632773B26C96ECEB /* libPods-SoundCloudNew.a */; };
+		D0F654011DBA8DE70064BBBF /* Default-568.png in Resources */ = {isa = PBXBuildFile; fileRef = D0F653FF1DBA8DE70064BBBF /* Default-568.png */; };
+		D0F654021DBA8DE70064BBBF /* Default-568@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D0F654001DBA8DE70064BBBF /* Default-568@2x.png */; };
+		D0F654051DBA8DFB0064BBBF /* Default-568.png in Resources */ = {isa = PBXBuildFile; fileRef = D0F654031DBA8DFB0064BBBF /* Default-568.png */; };
+		D0F654061DBA8DFB0064BBBF /* Default-568@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D0F654041DBA8DFB0064BBBF /* Default-568@2x.png */; };
+		F5CFECAF1D55B4770059E841 /* Genres.json in Resources */ = {isa = PBXBuildFile; fileRef = F5CFECAE1D55B4770059E841 /* Genres.json */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		4DDB2522E45FC959CFDACD49 /* Pods-SoundCloudNew.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SoundCloudNew.release.xcconfig"; path = "Pods/Target Support Files/Pods-SoundCloudNew/Pods-SoundCloudNew.release.xcconfig"; sourceTree = "<group>"; };
+		53966B271F06F4E7008497C5 /* Crashlytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Crashlytics.framework; sourceTree = "<group>"; };
+		53966B281F06F4E7008497C5 /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Fabric.framework; sourceTree = "<group>"; };
+		76024C4B473FFE46BA2DD043 /* Pods-SoundCloudNew.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SoundCloudNew.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SoundCloudNew/Pods-SoundCloudNew.debug.xcconfig"; sourceTree = "<group>"; };
+		89247EB91C5BE32000C42288 /* PlaylistDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlaylistDetailViewController.h; sourceTree = "<group>"; };
+		89247EBA1C5BE32000C42288 /* PlaylistDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlaylistDetailViewController.m; sourceTree = "<group>"; };
+		89247EBF1C5C046600C42288 /* MoreCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MoreCell.h; sourceTree = "<group>"; };
+		89247EC01C5C046600C42288 /* MoreCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MoreCell.m; sourceTree = "<group>"; };
+		89247EC11C5C046600C42288 /* MoreCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MoreCell.xib; sourceTree = "<group>"; };
+		89247EC51C5C229500C42288 /* AddToPlaylistViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddToPlaylistViewController.h; sourceTree = "<group>"; };
+		89247EC61C5C229500C42288 /* AddToPlaylistViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddToPlaylistViewController.m; sourceTree = "<group>"; };
+		89247ECF1C5C448C00C42288 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		89247ED11C5C4BB200C42288 /* NowPlayingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NowPlayingViewController.h; sourceTree = "<group>"; };
+		89247ED21C5C4BB200C42288 /* NowPlayingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NowPlayingViewController.m; sourceTree = "<group>"; };
+		89247ED41C5C4CBB00C42288 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		893542721C54CA1D0036E3FE /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		893542741C54CA260036E3FE /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		893542791C54CB0E0036E3FE /* Constant.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Constant.h; sourceTree = "<group>"; };
+		893695EA1C5BD3B7005FD4D0 /* Playlist+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "Playlist+CoreDataProperties.h"; path = "Model/Playlist+CoreDataProperties.h"; sourceTree = "<group>"; };
+		893695EB1C5BD3B7005FD4D0 /* Playlist+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "Playlist+CoreDataProperties.m"; path = "Model/Playlist+CoreDataProperties.m"; sourceTree = "<group>"; };
+		89540EE21C54C69A008790E5 /* Jamz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Jamz.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		89540EE61C54C69A008790E5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		89540EE81C54C69A008790E5 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		89540EE91C54C69A008790E5 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		89540EEF1C54C69A008790E5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		89540EF41C54C69A008790E5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		89540EF61C54C69A008790E5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		895ECD6C1CA06463007DD95D /* UIImage+Custom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Custom.h"; sourceTree = "<group>"; };
+		895ECD6D1CA06463007DD95D /* UIImage+Custom.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Custom.m"; sourceTree = "<group>"; };
+		89750AA91C5D264A007F9E76 /* TrackListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TrackListViewController.h; sourceTree = "<group>"; };
+		89750AAA1C5D264A007F9E76 /* TrackListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TrackListViewController.m; sourceTree = "<group>"; };
+		897BE8121C54D77A0024403D /* GenresViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GenresViewController.h; sourceTree = "<group>"; };
+		897BE8131C54D77A0024403D /* GenresViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GenresViewController.m; sourceTree = "<group>"; };
+		897BE8181C54D79A0024403D /* HistoryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HistoryViewController.h; sourceTree = "<group>"; };
+		897BE8191C54D79A0024403D /* HistoryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HistoryViewController.m; sourceTree = "<group>"; };
+		897BE81B1C54D7A50024403D /* PlaylistViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlaylistViewController.h; sourceTree = "<group>"; };
+		897BE81C1C54D7A50024403D /* PlaylistViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlaylistViewController.m; sourceTree = "<group>"; };
+		897BE81E1C54D7B20024403D /* MoreViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MoreViewController.h; sourceTree = "<group>"; };
+		897BE81F1C54D7B20024403D /* MoreViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MoreViewController.m; sourceTree = "<group>"; };
+		897BE8211C54DE5B0024403D /* SoundCloudAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SoundCloudAPI.h; sourceTree = "<group>"; };
+		897BE8221C54DE5B0024403D /* SoundCloudAPI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SoundCloudAPI.m; sourceTree = "<group>"; };
+		897BE8241C560A970024403D /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		897BE8251C560A970024403D /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		897BE8271C560F1F0024403D /* SearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchViewController.h; sourceTree = "<group>"; };
+		897BE8281C560F1F0024403D /* SearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchViewController.m; sourceTree = "<group>"; };
+		897BE82F1C5617930024403D /* SearchTrackCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchTrackCell.h; sourceTree = "<group>"; };
+		897BE8301C5617930024403D /* SearchTrackCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchTrackCell.m; sourceTree = "<group>"; };
+		897BE8311C5617930024403D /* SearchTrackCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SearchTrackCell.xib; sourceTree = "<group>"; };
+		897BE8371C56292B0024403D /* SuggestCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SuggestCell.h; sourceTree = "<group>"; };
+		897BE8381C56292B0024403D /* SuggestCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SuggestCell.m; sourceTree = "<group>"; };
+		897BE8391C56292B0024403D /* SuggestCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SuggestCell.xib; sourceTree = "<group>"; };
+		897BE83F1C562B9F0024403D /* Suggestion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Suggestion.h; sourceTree = "<group>"; };
+		897BE8401C562B9F0024403D /* Suggestion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Suggestion.m; sourceTree = "<group>"; };
+		898009291C571E74009C6973 /* TrackCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TrackCell.h; sourceTree = "<group>"; };
+		8980092A1C571E74009C6973 /* TrackCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TrackCell.m; sourceTree = "<group>"; };
+		8980092B1C571E74009C6973 /* TrackCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TrackCell.xib; sourceTree = "<group>"; };
+		8980092F1C57892F009C6973 /* SCDatabase.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SCDatabase.xcdatamodel; sourceTree = "<group>"; };
+		8980094F1C57983A009C6973 /* Playlist.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Playlist.h; sourceTree = "<group>"; };
+		898009501C57983A009C6973 /* Playlist.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Playlist.m; sourceTree = "<group>"; };
+		898009531C57983A009C6973 /* PlaylistTrack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlaylistTrack.h; sourceTree = "<group>"; };
+		898009541C57983A009C6973 /* PlaylistTrack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlaylistTrack.m; sourceTree = "<group>"; };
+		898009AC1C57D89D009C6973 /* Genre.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Genre.h; sourceTree = "<group>"; };
+		898009AD1C57D89D009C6973 /* Genre.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Genre.m; sourceTree = "<group>"; };
+		898009BB1C57E1D2009C6973 /* GenreCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GenreCell.h; sourceTree = "<group>"; };
+		898009BC1C57E1D2009C6973 /* GenreCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GenreCell.m; sourceTree = "<group>"; };
+		898009BD1C57E1D2009C6973 /* GenreCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GenreCell.xib; sourceTree = "<group>"; };
+		898009C01C580138009C6973 /* GenreDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GenreDetailViewController.h; sourceTree = "<group>"; };
+		898009C11C580138009C6973 /* GenreDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GenreDetailViewController.m; sourceTree = "<group>"; };
+		898B1E901C56559200C7E892 /* NSNumber+SoundCloud.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSNumber+SoundCloud.h"; sourceTree = "<group>"; };
+		898B1E911C56559200C7E892 /* NSNumber+SoundCloud.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSNumber+SoundCloud.m"; sourceTree = "<group>"; };
+		898BFABB1C59C928003CAB91 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		898BFABD1C5A4E98003CAB91 /* PlaylistCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlaylistCell.h; sourceTree = "<group>"; };
+		898BFABE1C5A4E98003CAB91 /* PlaylistCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlaylistCell.m; sourceTree = "<group>"; };
+		898BFABF1C5A4E98003CAB91 /* PlaylistCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PlaylistCell.xib; sourceTree = "<group>"; };
+		89A6C85C1C592D7600577EA4 /* Genre+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "Genre+CoreDataProperties.h"; path = "Model/Genre+CoreDataProperties.h"; sourceTree = "<group>"; };
+		89A6C85D1C592D7600577EA4 /* Genre+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "Genre+CoreDataProperties.m"; path = "Model/Genre+CoreDataProperties.m"; sourceTree = "<group>"; };
+		89A6C8601C592D7600577EA4 /* DBTrack+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "DBTrack+CoreDataProperties.h"; path = "Model/DBTrack+CoreDataProperties.h"; sourceTree = "<group>"; };
+		89A6C8611C592D7600577EA4 /* DBTrack+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "DBTrack+CoreDataProperties.m"; path = "Model/DBTrack+CoreDataProperties.m"; sourceTree = "<group>"; };
+		89A6C8701C592E5400577EA4 /* DBTrack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBTrack.h; sourceTree = "<group>"; };
+		89A6C8711C592E5400577EA4 /* DBTrack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBTrack.m; sourceTree = "<group>"; };
+		89A6C8721C592E5400577EA4 /* Track.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Track.h; sourceTree = "<group>"; };
+		89A6C8731C592E5400577EA4 /* Track.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Track.m; sourceTree = "<group>"; };
+		89A6C87C1C5962D000577EA4 /* PlaylistTrack+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "PlaylistTrack+CoreDataProperties.h"; path = "Model/PlaylistTrack+CoreDataProperties.h"; sourceTree = "<group>"; };
+		89A6C87D1C5962D000577EA4 /* PlaylistTrack+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "PlaylistTrack+CoreDataProperties.m"; path = "Model/PlaylistTrack+CoreDataProperties.m"; sourceTree = "<group>"; };
+		93038CB3632773B26C96ECEB /* libPods-SoundCloudNew.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SoundCloudNew.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A4C960D31F44B3080042DD93 /* MenuVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuVC.h; sourceTree = "<group>"; };
+		A4C960D41F44B3080042DD93 /* MenuVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuVC.m; sourceTree = "<group>"; };
+		A4C960D51F44B3080042DD93 /* MenuVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MenuVC.xib; sourceTree = "<group>"; };
+		A4C960D81F44BD9B0042DD93 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		D0F653FF1DBA8DE70064BBBF /* Default-568.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568.png"; sourceTree = "<group>"; };
+		D0F654001DBA8DE70064BBBF /* Default-568@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568@2x.png"; sourceTree = "<group>"; };
+		D0F654031DBA8DFB0064BBBF /* Default-568.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568.png"; sourceTree = "<group>"; };
+		D0F654041DBA8DFB0064BBBF /* Default-568@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568@2x.png"; sourceTree = "<group>"; };
+		F5CFECAE1D55B4770059E841 /* Genres.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Genres.json; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		89540EDF1C54C69A008790E5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A4C960D91F44BD9B0042DD93 /* MessageUI.framework in Frameworks */,
+				89247ED51C5C4CBB00C42288 /* AVFoundation.framework in Frameworks */,
+				53966B291F06F4E7008497C5 /* Crashlytics.framework in Frameworks */,
+				893542751C54CA260036E3FE /* CoreData.framework in Frameworks */,
+				893542731C54CA1D0036E3FE /* QuartzCore.framework in Frameworks */,
+				53966B2A1F06F4E7008497C5 /* Fabric.framework in Frameworks */,
+				B062191498F64199AC0E94D6 /* libPods-SoundCloudNew.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2340AB5603DE658E5997B85A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				76024C4B473FFE46BA2DD043 /* Pods-SoundCloudNew.debug.xcconfig */,
+				4DDB2522E45FC959CFDACD49 /* Pods-SoundCloudNew.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		89247EC41C5C225E00C42288 /* AddToPlaylist */ = {
+			isa = PBXGroup;
+			children = (
+				89247EC51C5C229500C42288 /* AddToPlaylistViewController.h */,
+				89247EC61C5C229500C42288 /* AddToPlaylistViewController.m */,
+			);
+			name = AddToPlaylist;
+			sourceTree = "<group>";
+		};
+		89247ECB1C5C42CC00C42288 /* Playing */ = {
+			isa = PBXGroup;
+			children = (
+				89247ED11C5C4BB200C42288 /* NowPlayingViewController.h */,
+				89247ED21C5C4BB200C42288 /* NowPlayingViewController.m */,
+				89750AA91C5D264A007F9E76 /* TrackListViewController.h */,
+				89750AAA1C5D264A007F9E76 /* TrackListViewController.m */,
+			);
+			name = Playing;
+			sourceTree = "<group>";
+		};
+		8935427A1C54CC5C0036E3FE /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				A4C960D21F44B2ED0042DD93 /* Menu */,
+				89540EEE1C54C69A008790E5 /* Main.storyboard */,
+				89540EF31C54C69A008790E5 /* LaunchScreen.storyboard */,
+				898BFABB1C59C928003CAB91 /* Assets.xcassets */,
+				8935427E1C54CD910036E3FE /* CustomViews */,
+				8935427D1C54CD790036E3FE /* CustomCells */,
+				8935427F1C54CDBC0036E3FE /* Genres */,
+				893542801C54CDC50036E3FE /* Search */,
+				893542811C54CDCD0036E3FE /* History */,
+				893542821C54CDD30036E3FE /* Playlist */,
+				893542831C54CDDC0036E3FE /* More */,
+				89247EC41C5C225E00C42288 /* AddToPlaylist */,
+				89247ECB1C5C42CC00C42288 /* Playing */,
+			);
+			name = UI;
+			sourceTree = "<group>";
+		};
+		8935427B1C54CC610036E3FE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				897BE83F1C562B9F0024403D /* Suggestion.h */,
+				897BE8401C562B9F0024403D /* Suggestion.m */,
+				8980092E1C57892F009C6973 /* SCDatabase.xcdatamodeld */,
+				898009AC1C57D89D009C6973 /* Genre.h */,
+				898009AD1C57D89D009C6973 /* Genre.m */,
+				89A6C8721C592E5400577EA4 /* Track.h */,
+				89A6C8731C592E5400577EA4 /* Track.m */,
+				89A6C8701C592E5400577EA4 /* DBTrack.h */,
+				89A6C8711C592E5400577EA4 /* DBTrack.m */,
+				8980094F1C57983A009C6973 /* Playlist.h */,
+				898009501C57983A009C6973 /* Playlist.m */,
+				898009531C57983A009C6973 /* PlaylistTrack.h */,
+				898009541C57983A009C6973 /* PlaylistTrack.m */,
+				8935428A1C54D11C0036E3FE /* CoreDataModel */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		8935427C1C54CC6B0036E3FE /* Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				895ECD6B1CA06450007DD95D /* ImageCategory */,
+				897BE8431C5646830024403D /* StringCategory */,
+				897BE8421C5646580024403D /* SoundCloudAPI */,
+			);
+			name = Libraries;
+			sourceTree = "<group>";
+		};
+		8935427D1C54CD790036E3FE /* CustomCells */ = {
+			isa = PBXGroup;
+			children = (
+				898009BB1C57E1D2009C6973 /* GenreCell.h */,
+				898009BC1C57E1D2009C6973 /* GenreCell.m */,
+				898009BD1C57E1D2009C6973 /* GenreCell.xib */,
+				897BE82F1C5617930024403D /* SearchTrackCell.h */,
+				897BE8301C5617930024403D /* SearchTrackCell.m */,
+				897BE8311C5617930024403D /* SearchTrackCell.xib */,
+				897BE8371C56292B0024403D /* SuggestCell.h */,
+				897BE8381C56292B0024403D /* SuggestCell.m */,
+				897BE8391C56292B0024403D /* SuggestCell.xib */,
+				898009291C571E74009C6973 /* TrackCell.h */,
+				8980092A1C571E74009C6973 /* TrackCell.m */,
+				8980092B1C571E74009C6973 /* TrackCell.xib */,
+				898BFABD1C5A4E98003CAB91 /* PlaylistCell.h */,
+				898BFABE1C5A4E98003CAB91 /* PlaylistCell.m */,
+				898BFABF1C5A4E98003CAB91 /* PlaylistCell.xib */,
+				89247EBF1C5C046600C42288 /* MoreCell.h */,
+				89247EC01C5C046600C42288 /* MoreCell.m */,
+				89247EC11C5C046600C42288 /* MoreCell.xib */,
+			);
+			name = CustomCells;
+			sourceTree = "<group>";
+		};
+		8935427E1C54CD910036E3FE /* CustomViews */ = {
+			isa = PBXGroup;
+			children = (
+				897BE8241C560A970024403D /* MainViewController.h */,
+				897BE8251C560A970024403D /* MainViewController.m */,
+			);
+			name = CustomViews;
+			sourceTree = "<group>";
+		};
+		8935427F1C54CDBC0036E3FE /* Genres */ = {
+			isa = PBXGroup;
+			children = (
+				897BE8121C54D77A0024403D /* GenresViewController.h */,
+				897BE8131C54D77A0024403D /* GenresViewController.m */,
+				898009C01C580138009C6973 /* GenreDetailViewController.h */,
+				898009C11C580138009C6973 /* GenreDetailViewController.m */,
+			);
+			name = Genres;
+			sourceTree = "<group>";
+		};
+		893542801C54CDC50036E3FE /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				897BE8271C560F1F0024403D /* SearchViewController.h */,
+				897BE8281C560F1F0024403D /* SearchViewController.m */,
+			);
+			name = Search;
+			sourceTree = "<group>";
+		};
+		893542811C54CDCD0036E3FE /* History */ = {
+			isa = PBXGroup;
+			children = (
+				897BE8181C54D79A0024403D /* HistoryViewController.h */,
+				897BE8191C54D79A0024403D /* HistoryViewController.m */,
+			);
+			name = History;
+			sourceTree = "<group>";
+		};
+		893542821C54CDD30036E3FE /* Playlist */ = {
+			isa = PBXGroup;
+			children = (
+				897BE81B1C54D7A50024403D /* PlaylistViewController.h */,
+				897BE81C1C54D7A50024403D /* PlaylistViewController.m */,
+				89247EB91C5BE32000C42288 /* PlaylistDetailViewController.h */,
+				89247EBA1C5BE32000C42288 /* PlaylistDetailViewController.m */,
+			);
+			name = Playlist;
+			sourceTree = "<group>";
+		};
+		893542831C54CDDC0036E3FE /* More */ = {
+			isa = PBXGroup;
+			children = (
+				897BE81E1C54D7B20024403D /* MoreViewController.h */,
+				897BE81F1C54D7B20024403D /* MoreViewController.m */,
+			);
+			name = More;
+			sourceTree = "<group>";
+		};
+		8935428A1C54D11C0036E3FE /* CoreDataModel */ = {
+			isa = PBXGroup;
+			children = (
+				893695EA1C5BD3B7005FD4D0 /* Playlist+CoreDataProperties.h */,
+				893695EB1C5BD3B7005FD4D0 /* Playlist+CoreDataProperties.m */,
+				89A6C87C1C5962D000577EA4 /* PlaylistTrack+CoreDataProperties.h */,
+				89A6C87D1C5962D000577EA4 /* PlaylistTrack+CoreDataProperties.m */,
+				89A6C85C1C592D7600577EA4 /* Genre+CoreDataProperties.h */,
+				89A6C85D1C592D7600577EA4 /* Genre+CoreDataProperties.m */,
+				89A6C8601C592D7600577EA4 /* DBTrack+CoreDataProperties.h */,
+				89A6C8611C592D7600577EA4 /* DBTrack+CoreDataProperties.m */,
+			);
+			name = CoreDataModel;
+			sourceTree = "<group>";
+		};
+		89540ED91C54C69A008790E5 = {
+			isa = PBXGroup;
+			children = (
+				D0F654031DBA8DFB0064BBBF /* Default-568.png */,
+				D0F654041DBA8DFB0064BBBF /* Default-568@2x.png */,
+				89540EE41C54C69A008790E5 /* SoundCloudNew */,
+				89540EE31C54C69A008790E5 /* Products */,
+				F2D369A4699E15ABD754DA26 /* Frameworks */,
+				2340AB5603DE658E5997B85A /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		89540EE31C54C69A008790E5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				89540EE21C54C69A008790E5 /* Jamz.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		89540EE41C54C69A008790E5 /* SoundCloudNew */ = {
+			isa = PBXGroup;
+			children = (
+				D0F653FF1DBA8DE70064BBBF /* Default-568.png */,
+				D0F654001DBA8DE70064BBBF /* Default-568@2x.png */,
+				893542791C54CB0E0036E3FE /* Constant.h */,
+				89540EE81C54C69A008790E5 /* AppDelegate.h */,
+				89540EE91C54C69A008790E5 /* AppDelegate.m */,
+				89540EF61C54C69A008790E5 /* Info.plist */,
+				8935427A1C54CC5C0036E3FE /* UI */,
+				8935427B1C54CC610036E3FE /* Model */,
+				8935427C1C54CC6B0036E3FE /* Libraries */,
+				89540EE51C54C69A008790E5 /* Supporting Files */,
+			);
+			path = SoundCloudNew;
+			sourceTree = "<group>";
+		};
+		89540EE51C54C69A008790E5 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				89540EE61C54C69A008790E5 /* main.m */,
+				F5CFECAE1D55B4770059E841 /* Genres.json */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		895ECD6B1CA06450007DD95D /* ImageCategory */ = {
+			isa = PBXGroup;
+			children = (
+				895ECD6C1CA06463007DD95D /* UIImage+Custom.h */,
+				895ECD6D1CA06463007DD95D /* UIImage+Custom.m */,
+			);
+			name = ImageCategory;
+			sourceTree = "<group>";
+		};
+		897BE8421C5646580024403D /* SoundCloudAPI */ = {
+			isa = PBXGroup;
+			children = (
+				897BE8211C54DE5B0024403D /* SoundCloudAPI.h */,
+				897BE8221C54DE5B0024403D /* SoundCloudAPI.m */,
+			);
+			name = SoundCloudAPI;
+			sourceTree = "<group>";
+		};
+		897BE8431C5646830024403D /* StringCategory */ = {
+			isa = PBXGroup;
+			children = (
+				898B1E901C56559200C7E892 /* NSNumber+SoundCloud.h */,
+				898B1E911C56559200C7E892 /* NSNumber+SoundCloud.m */,
+			);
+			name = StringCategory;
+			sourceTree = "<group>";
+		};
+		A4C960D21F44B2ED0042DD93 /* Menu */ = {
+			isa = PBXGroup;
+			children = (
+				A4C960D31F44B3080042DD93 /* MenuVC.h */,
+				A4C960D41F44B3080042DD93 /* MenuVC.m */,
+				A4C960D51F44B3080042DD93 /* MenuVC.xib */,
+			);
+			path = Menu;
+			sourceTree = "<group>";
+		};
+		F2D369A4699E15ABD754DA26 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A4C960D81F44BD9B0042DD93 /* MessageUI.framework */,
+				53966B271F06F4E7008497C5 /* Crashlytics.framework */,
+				53966B281F06F4E7008497C5 /* Fabric.framework */,
+				89247ED41C5C4CBB00C42288 /* AVFoundation.framework */,
+				89247ECF1C5C448C00C42288 /* SystemConfiguration.framework */,
+				893542741C54CA260036E3FE /* CoreData.framework */,
+				893542721C54CA1D0036E3FE /* QuartzCore.framework */,
+				93038CB3632773B26C96ECEB /* libPods-SoundCloudNew.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		89540EE11C54C69A008790E5 /* SoundCloudNew */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 89540EF91C54C69A008790E5 /* Build configuration list for PBXNativeTarget "SoundCloudNew" */;
+			buildPhases = (
+				BCB526363027599B8CC4EECC /* [CP] Check Pods Manifest.lock */,
+				89540EDE1C54C69A008790E5 /* Sources */,
+				89540EDF1C54C69A008790E5 /* Frameworks */,
+				89540EE01C54C69A008790E5 /* Resources */,
+				53966B2B1F06F532008497C5 /* ShellScript */,
+				CED24BAFE90B8CC3A42CE69D /* [CP] Embed Pods Frameworks */,
+				1C4E1501A658FF14E2665C02 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SoundCloudNew;
+			productName = SoundCloudNew;
+			productReference = 89540EE21C54C69A008790E5 /* Jamz.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		89540EDA1C54C69A008790E5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0710;
+				ORGANIZATIONNAME = "Kartik Sharma";
+				TargetAttributes = {
+					89540EE11C54C69A008790E5 = {
+						CreatedOnToolsVersion = 7.1.1;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 89540EDD1C54C69A008790E5 /* Build configuration list for PBXProject "SoundCloudNew" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 89540ED91C54C69A008790E5;
+			productRefGroup = 89540EE31C54C69A008790E5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				89540EE11C54C69A008790E5 /* SoundCloudNew */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		89540EE01C54C69A008790E5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D0F654061DBA8DFB0064BBBF /* Default-568@2x.png in Resources */,
+				D0F654021DBA8DE70064BBBF /* Default-568@2x.png in Resources */,
+				898009BF1C57E1D2009C6973 /* GenreCell.xib in Resources */,
+				D0F654051DBA8DFB0064BBBF /* Default-568.png in Resources */,
+				D0F654011DBA8DE70064BBBF /* Default-568.png in Resources */,
+				897BE83B1C56292B0024403D /* SuggestCell.xib in Resources */,
+				89540EF51C54C69A008790E5 /* LaunchScreen.storyboard in Resources */,
+				898BFAC11C5A4E98003CAB91 /* PlaylistCell.xib in Resources */,
+				89247EC31C5C046600C42288 /* MoreCell.xib in Resources */,
+				A4C960D71F44B3080042DD93 /* MenuVC.xib in Resources */,
+				8980092D1C571E74009C6973 /* TrackCell.xib in Resources */,
+				898BFABC1C59C928003CAB91 /* Assets.xcassets in Resources */,
+				F5CFECAF1D55B4770059E841 /* Genres.json in Resources */,
+				89540EF01C54C69A008790E5 /* Main.storyboard in Resources */,
+				897BE8331C5617930024403D /* SearchTrackCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1C4E1501A658FF14E2665C02 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SoundCloudNew/Pods-SoundCloudNew-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		53966B2B1F06F532008497C5 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PROJECT_DIR}/Fabric.framework/run\" ea5bbf4df17794f453b818bfcde8e76151e8555b 79e0d6389415993125bd9603f27fc1b494d81d3aa6c71b23f1cc4ee5afe5f870";
+		};
+		BCB526363027599B8CC4EECC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		CED24BAFE90B8CC3A42CE69D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SoundCloudNew/Pods-SoundCloudNew-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		89540EDE1C54C69A008790E5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				89247ED31C5C4BB200C42288 /* NowPlayingViewController.m in Sources */,
+				89A6C86C1C592D7600577EA4 /* DBTrack+CoreDataProperties.m in Sources */,
+				89247EBB1C5BE32000C42288 /* PlaylistDetailViewController.m in Sources */,
+				897BE8321C5617930024403D /* SearchTrackCell.m in Sources */,
+				89750AAB1C5D264A007F9E76 /* TrackListViewController.m in Sources */,
+				89540EEA1C54C69A008790E5 /* AppDelegate.m in Sources */,
+				897BE81D1C54D7A50024403D /* PlaylistViewController.m in Sources */,
+				8980092C1C571E74009C6973 /* TrackCell.m in Sources */,
+				898B1E921C56559200C7E892 /* NSNumber+SoundCloud.m in Sources */,
+				A4C960D61F44B3080042DD93 /* MenuVC.m in Sources */,
+				898009AE1C57D89D009C6973 /* Genre.m in Sources */,
+				893695EE1C5BD3B7005FD4D0 /* Playlist+CoreDataProperties.m in Sources */,
+				89A6C8741C592E5400577EA4 /* DBTrack.m in Sources */,
+				8980095C1C57983A009C6973 /* Playlist.m in Sources */,
+				898009301C57892F009C6973 /* SCDatabase.xcdatamodeld in Sources */,
+				897BE81A1C54D79A0024403D /* HistoryViewController.m in Sources */,
+				897BE8231C54DE5B0024403D /* SoundCloudAPI.m in Sources */,
+				89540EE71C54C69A008790E5 /* main.m in Sources */,
+				898009BE1C57E1D2009C6973 /* GenreCell.m in Sources */,
+				897BE8261C560A970024403D /* MainViewController.m in Sources */,
+				89247EC71C5C229500C42288 /* AddToPlaylistViewController.m in Sources */,
+				895ECD6E1CA06463007DD95D /* UIImage+Custom.m in Sources */,
+				897BE8141C54D77A0024403D /* GenresViewController.m in Sources */,
+				898BFAC01C5A4E98003CAB91 /* PlaylistCell.m in Sources */,
+				89247EC21C5C046600C42288 /* MoreCell.m in Sources */,
+				897BE83A1C56292B0024403D /* SuggestCell.m in Sources */,
+				897BE8291C560F1F0024403D /* SearchViewController.m in Sources */,
+				89A6C8801C5962D000577EA4 /* PlaylistTrack+CoreDataProperties.m in Sources */,
+				89A6C86A1C592D7600577EA4 /* Genre+CoreDataProperties.m in Sources */,
+				89A6C8751C592E5400577EA4 /* Track.m in Sources */,
+				898009C21C580138009C6973 /* GenreDetailViewController.m in Sources */,
+				897BE8411C562B9F0024403D /* Suggestion.m in Sources */,
+				8980095E1C57983A009C6973 /* PlaylistTrack.m in Sources */,
+				897BE8201C54D7B20024403D /* MoreViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		89540EEE1C54C69A008790E5 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				89540EEF1C54C69A008790E5 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		89540EF31C54C69A008790E5 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				89540EF41C54C69A008790E5 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		89540EF71C54C69A008790E5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		89540EF81C54C69A008790E5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		89540EFA1C54C69A008790E5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 76024C4B473FFE46BA2DD043 /* Pods-SoundCloudNew.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 2GZ57353N3;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = SoundCloudNew/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.soundflip.www;
+				PRODUCT_NAME = Jamz;
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		89540EFB1C54C69A008790E5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4DDB2522E45FC959CFDACD49 /* Pods-SoundCloudNew.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 2GZ57353N3;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = SoundCloudNew/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.soundflip.www;
+				PRODUCT_NAME = Jamz;
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		89540EDD1C54C69A008790E5 /* Build configuration list for PBXProject "SoundCloudNew" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				89540EF71C54C69A008790E5 /* Debug */,
+				89540EF81C54C69A008790E5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		89540EF91C54C69A008790E5 /* Build configuration list for PBXNativeTarget "SoundCloudNew" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				89540EFA1C54C69A008790E5 /* Debug */,
+				89540EFB1C54C69A008790E5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		8980092E1C57892F009C6973 /* SCDatabase.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				8980092F1C57892F009C6973 /* SCDatabase.xcdatamodel */,
+			);
+			currentVersion = 8980092F1C57892F009C6973 /* SCDatabase.xcdatamodel */;
+			path = SCDatabase.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 89540EDA1C54C69A008790E5 /* Project object */;
+}

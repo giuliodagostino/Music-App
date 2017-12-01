@@ -1,0 +1,59 @@
+PODS:
+  - AFNetworking (3.1.0):
+    - AFNetworking/NSURLSession (= 3.1.0)
+    - AFNetworking/Reachability (= 3.1.0)
+    - AFNetworking/Security (= 3.1.0)
+    - AFNetworking/Serialization (= 3.1.0)
+    - AFNetworking/UIKit (= 3.1.0)
+  - AFNetworking/NSURLSession (3.1.0):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (3.1.0)
+  - AFNetworking/Security (3.1.0)
+  - AFNetworking/Serialization (3.1.0)
+  - AFNetworking/UIKit (3.1.0):
+    - AFNetworking/NSURLSession
+  - DZNEmptyDataSet (1.8.1)
+  - Google-Mobile-Ads-SDK (7.22.0)
+  - MagicalRecord (2.3.2):
+    - MagicalRecord/Core (= 2.3.2)
+  - MagicalRecord/Core (2.3.2)
+  - MarqueeLabel (3.1.2):
+    - MarqueeLabel/ObjC (= 3.1.2)
+  - MarqueeLabel/ObjC (3.1.2)
+  - Masonry (1.0.2)
+  - MGSwipeTableCell (1.6.0)
+  - Reachability (3.2)
+  - SDWebImage (4.1.0):
+    - SDWebImage/Core (= 4.1.0)
+  - SDWebImage/Core (4.1.0)
+  - SVPullToRefresh (0.4.1)
+
+DEPENDENCIES:
+  - AFNetworking
+  - DZNEmptyDataSet
+  - Google-Mobile-Ads-SDK
+  - MagicalRecord
+  - MarqueeLabel
+  - Masonry
+  - MGSwipeTableCell
+  - Reachability
+  - SDWebImage
+  - SVPullToRefresh
+
+SPEC CHECKSUMS:
+  AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
+  DZNEmptyDataSet: 9525833b9e68ac21c30253e1d3d7076cc828eaa7
+  Google-Mobile-Ads-SDK: 1bdf1a4244d0553b1840239874c209c01aef055f
+  MagicalRecord: 53bed74b4323b930992a725be713e53b37d19755
+  MarqueeLabel: fcd7057a779422d86589be759036f1510b08c6a0
+  Masonry: 7c429b56da9d4ee0bbb3ed77a5ea710d6a5df39e
+  MGSwipeTableCell: 6e1994f1eb31c76e76f70a8bc39de3c42cf5cd38
+  Reachability: 33e18b67625424e47b6cde6d202dce689ad7af96
+  SDWebImage: 0e435c14e402a6730315a0fb79f95e68654d55a4
+  SVPullToRefresh: ba2e718695a43253d8bea6852d2960097dc15d8c
+
+PODFILE CHECKSUM: d353e2c1ca5baecebb9e3b00e214980bffeb7f4c
+
+COCOAPODS: 1.2.1

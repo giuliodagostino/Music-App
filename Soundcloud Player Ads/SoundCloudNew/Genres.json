@@ -1,0 +1,217 @@
+ [
+  {
+  "name" : "Popular Music",
+  "id" : "soundcloud%3Agenres%3Aall-music",
+  "soundcloud" : "yes"
+  },
+  {
+  "name" : "Popular Audio",
+  "id" : "soundcloud%3Agenres%3Aall-audio",
+  "soundcloud" : "yes"
+  },
+  {
+  "name" : "Alternative Rock",
+  "id" : "soundcloud%3Agenres%3Aalternativerock",
+  "soundcloud" : "yes"
+  },
+  {
+  "name" : "Ambient",
+  "id" : "soundcloud%3Agenres%3Aambient",
+  "soundcloud" : "yes"
+  },
+  {
+  "name" : "Classical",
+  "id" : "soundcloud%3Agenres%3Aclassical",
+  "soundcloud" : "yes"
+  },
+  {
+  "name" : "Country",
+  "id" : "soundcloud%3Agenres%3Acountry",
+  "soundcloud" : "yes"
+  },
+  {
+  "name" : "Dance & EDM",
+  "id" : "soundcloud%3Agenres%3Adanceedm",
+  "soundcloud" : "yes"
+  },
+  {
+  "name" : "Dancehall",
+  "id" : "soundcloud%3Agenres%3Adancehall",
+  "soundcloud" : "yes"
+  },
+  {
+  "name" : "Deep House",
+  "id" : "soundcloud%3Agenres%3Adeephouse",
+  "soundcloud" : "yes"
+  },
+  {
+  "name" : "Disco",
+  "id" : "soundcloud%3Agenres%3Adisco",
+  "soundcloud" : "yes"
+  },
+  {
+  "name" : "Drum & Bass",
+  "id" : "soundcloud%3Agenres%3Adrumbass",
+  "soundcloud" : "yes"
+  },
+  {
+  "name" : "Dubstep",
+  "id" : "soundcloud%3Agenres%3Adubstep",
+  "soundcloud" : "yes"
+  },
+  {
+  "name" : "Electronic",
+  "id" : "soundcloud%3Agenres%3Aelectronic",
+  "soundcloud" : "yes"
+  },
+  {
+  "name" : "Folk & Singer-Songwriter",
+  "id" : "soundcloud%3Agenres%3Afolksingersongwriter",
+  "soundcloud" : "yes"
+  },
+  {
+  "name" : "Hip Hop & Rap",
+  "id" : "soundcloud%3Agenres%3Ahiphoprap",
+  "soundcloud" : "yes"
+  },
+  {
+  "name" : "House",
+  "id" : "soundcloud%3Agenres%3Ahouse",
+  "soundcloud" : "yes"
+  },
+  {
+  "name" : "Indie",
+  "id" : "soundcloud%3Agenres%3Aindie",
+  "soundcloud" : "yes"
+  },
+  {
+  "name" : "Jazz & Blues",
+  "id" : "soundcloud%3Agenres%3Ajazzblues",
+  "soundcloud" : "yes"
+  },
+  {
+  "name" : "Latin",
+  "id" : "soundcloud%3Agenres%3Alatin",
+  "soundcloud" : "yes"
+  },
+  {
+  "name" : "Metal",
+  "id" : "soundcloud%3Agenres%3Ametal",
+  "soundcloud" : "yes"
+  },
+  {
+  "name" : "Piano",
+  "id" : "soundcloud%3Agenres%3Apiano",
+  "soundcloud" : "yes"
+  },
+  {
+  "name" : "Pop",
+  "id" : "soundcloud%3Agenres%3Apop",
+  "soundcloud" : "yes"
+  },
+  {
+  "name" : "R&B & Soul",
+  "id" : "soundcloud%3Agenres%3Arbsoul",
+  "soundcloud" : "yes"
+  },
+  {
+  "name" : "Reggae",
+  "id" : "soundcloud%3Agenres%3Areggae",
+  "soundcloud" : "yes"
+  },
+  {
+  "name" : "ReggaeTon",
+  "id" : "soundcloud%3Agenres%3Areggaeton",
+  "soundcloud" : "yes"
+  },
+  {
+  "name" : "Rock",
+  "id" : "soundcloud%3Agenres%3Arock",
+  "soundcloud" : "yes"
+  },
+  {
+  "name" : "Soundtrack",
+  "id" : "soundcloud%3Agenres%3Asoundtrack",
+  "soundcloud" : "yes"
+  },
+  {
+  "name" : "Techno",
+  "id" : "soundcloud%3Agenres%3Atechno",
+  "soundcloud" : "yes"
+  },
+  {
+  "name" : "Trance",
+  "id" : "soundcloud%3Agenres%3Atrance",
+  "soundcloud" : "yes"
+  },
+  {
+  "name" : "Trap",
+  "id" : "soundcloud%3Agenres%3Atrap",
+  "soundcloud" : "yes"
+  },
+  {
+  "name" : "Trip Hop",
+  "id" : "soundcloud%3Agenres%3Atriphop",
+  "soundcloud" : "yes"
+  },
+  {
+  "name" : "World",
+  "id" : "soundcloud%3Agenres%3Aworld",
+  "soundcloud" : "yes"
+  },
+  {
+  "name" : "Audiobooks",
+  "id" : "soundcloud%3Agenres%3Aaudiobooks",
+  "soundcloud" : "yes"
+  },
+  {
+  "name" : "Business",
+  "id" : "soundcloud%3Agenres%3Abusiness",
+  "soundcloud" : "yes"
+  },
+  {
+  "name" : "Comedy",
+  "id" : "soundcloud%3Agenres%3Acomedy",
+  "soundcloud" : "yes"
+  },
+  {
+  "name" : "Entertainment",
+  "id" : "soundcloud%3Agenres%3Aentertainment",
+  "soundcloud" : "yes"
+  },
+  {
+  "name" : "Learning",
+  "id" : "soundcloud%3Agenres%3Alearning",
+  "soundcloud" : "yes"
+  },
+  {
+  "name" : "News & Politics",
+  "id" : "soundcloud%3Agenres%3Anewspolitics",
+  "soundcloud" : "yes"
+  },
+  {
+  "name" : "Religion & Spirituality",
+  "id" : "soundcloud%3Agenres%3Areligionspirituality",
+  "soundcloud" : "yes"
+  },
+  {
+  "name" : "Science",
+  "id" : "soundcloud%3Agenres%3Ascience",
+  "soundcloud" : "yes"
+  },
+  {
+  "name" : "Sports",
+  "id" : "soundcloud%3Agenres%3Asports",
+  "soundcloud" : "yes"
+  },
+  {
+  "name" : "Storytelling",
+  "id" : "soundcloud%3Agenres%3Astorytelling",
+  "soundcloud" : "yes"
+  },
+  {
+  "name" : "Technology",
+  "id" : "soundcloud%3Agenres%3Atechnology",
+  "soundcloud" : "yes"
+  }
+  ]
